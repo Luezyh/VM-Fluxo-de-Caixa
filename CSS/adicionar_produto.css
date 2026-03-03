@@ -13,12 +13,20 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   background-image: linear-gradient(45deg, var(--primary), var(--secondary));
   background-repeat: no-repeat;
   height: 100vh;
 }
 
+.back{
+    color: white;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .produtos{
     display: flex;
     flex-direction: column;
@@ -109,23 +117,6 @@ body {
     text-align: center;
     margin: 0 10px;
     text-align: center;
-}
-input[type="number"]{
-    -moz-appearance: textfield;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-.produto button{
-    background-color: var(--secondary);
-    color: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 12px;
     margin-left: auto;
 }
 .produto img{
@@ -135,4 +126,23 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .produto p{
     margin: 0 10px;
+}
+.add{
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-left: auto;
+}
+.remove{
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 12px;
 }

@@ -57,6 +57,14 @@ button {
 }
 
 .btn {
-    background: linear-gradient(90deg, var(--secondary), #335175);
+    background-color: var(--secondary);
+    width: 150px;
+    height: 50px;
     color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
 }

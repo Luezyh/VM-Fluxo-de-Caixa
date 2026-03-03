@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --primary: #287bac;
+    --secondary: #292E91;
+    --light-gray: #e5e7eb;
+    --text: #f1f5f9;
+}
+
+body {
+    background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms{
+    background-color: var(--light-gray);
+    padding: 20px;
+    margin: 50px;
+    border-radius: 16px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
