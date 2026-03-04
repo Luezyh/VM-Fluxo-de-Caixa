@@ -21,7 +21,7 @@ body {
 .base{
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    display: flex;
+    display: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
