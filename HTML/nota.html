@@ -9,32 +9,64 @@
 <body>
 
     <div class="nota">
-        <div class="dados">
-            <p>Nome do cliente:</p>
-            <p>CPF:</p>
-            <p>Contato:</p>
+        <div class="cabecalho">
+            <div class="logo">[LOGO DO SUPERMERCADO]</div>
+            <div class="empresa">
+                <p>VM Supermercado</p>
+                <p>CNPJ: 67.999.999/0001-67</p>
+                <p>Endereço: Rua dos Mercados, 67</p>
+                <h3>Dados do cliente</h3>
+                <p id="nome"></p>
+                <p id="cpf"></p>
+                <p id="telefone"></p>
+            </div>
         </div>
+
+        <h2 class="titulo">CUPOM FISCAL ELETRÔNICO</h2>
         <table class="produtos">
-            <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Quantidade</th>
-            </tr>
-            <tr>
-                <td>Produto 1</td>
-                <td>R$ 10,00</td>
-                <td><input type="number" name="quantidade_produto_1" min="0"></td>
-            </tr>
-            <tr>
-                <td>Produto 2</td>
-                <td>R$ 20,00</td>
-                <td><input type="number" name="quantidade_produto_2" min="0"></td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>QTD</th>
+                    <th>ITEM</th>
+                    <th>UN</th>
+                    <th>UNIT</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Arroz 5kg</td>
+                    <td>UN</td>
+                    <td>20.00</td>
+                    <td>40.00</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Feijão 1kg</td>
+                    <td>UN</td>
+                    <td>8.50</td>
+                    <td>8.50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Leite Integral</td>
+                    <td>UN</td>
+                    <td>4.20</td>
+                    <td>12.60</td>
+                </tr>
+            </tbody>
         </table>
-        <div>
-            <h1>Total:</h1>
+
+        <div class="resumo">
+            <p class="total">TOTAL R$ <span>61.10</span></p>
+            <p class="pgto">FORMA DE PAGAMENTO: Cartão de Crédito</p>
         </div>
     </div>
+
+    <a href="../index.html">Voltar ao início</a>
+
+    <script src="../JAVASCRIPT/nota.js"></script>
     
 </body>
 </html>

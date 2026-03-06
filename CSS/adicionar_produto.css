@@ -61,15 +61,39 @@ body {
 .card{
     width: 100px;
     padding: 8px 16px;
-    border: 1px solid var(--text);
+    border: 2px solid var(--text);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 .card img{
     width: 32px;
     height: 32px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.selecionado{
+    border: 2px solid var(--secondary);
+}
+.confirm{
+    width: 100px;
+    height: 32px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--light-gray);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.confirm:hover{
+    transform: scale(1.1);
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
 }
 
 .back{

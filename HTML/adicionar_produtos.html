@@ -30,6 +30,8 @@
                     <p>Débito</p>
                 </div> 
             </div>
+
+            <button onclick="Finalizar_Compra()" class="confirm">Confirmar</button>
             
         </div>
     </div>
@@ -41,52 +43,34 @@
             <h3>Produtos disponíveis</h3>
             <div class="produtos-lista">
                 <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <button class="add">+</button>
+                    <img src="../IMAGES/1.png">
+                    <p>Arroz Camil</p>
+                    <p>15,00R$</p>
+                    <button onclick="Add('Arroz Camil', '15,00R$', '../IMAGES/1.png')" class="add">+</button>
                 </div>
                 <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <button class="add">+</button>
+                    <img src="../IMAGES/2.png">
+                    <p>Feijão Kicaldo</p>
+                    <p>8,00R$</p>
+                    <button onclick="Add('Feijão Kicaldo', '8,00R$', '../IMAGES/2.png')" class="add">+</button>
                 </div>
                 <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <button class="add">+</button>
+                    <img src="../IMAGES/3.png" alt="">
+                    <p>Sucrilhos Brawl Stars</p>
+                    <p>18,00R$</p>
+                    <button onclick="Add('Sucrilhos Brawl Stars', '18,00R$', '../IMAGES/3.png')" class="add">+</button>
                 </div>
                 <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <button class="add">+</button>
+                    <img src="../IMAGES/4.png">
+                    <p>Nescau 990g</p>
+                    <p>20,00R$</p>
+                    <button onclick="Add('Nescau 990g', '20,00R$', '../IMAGES/4.png')" class="add">+</button>
                 </div>
                 <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <button class="add">+</button>
-                </div>
-                <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <button class="add">+</button>
-                </div>
-                <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <button class="add">+</button>
-                </div>
-                <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <button class="add">+</button>
+                    <img src="../IMAGES/5.png">
+                    <p>Leite Tirol</p>
+                    <p>5,00R$</p>
+                    <button onclick="Add('Leite Tirol', '5,00R$', '../IMAGES/5.png')" class="add">+</button>
                 </div>
             </div>
         </div>
@@ -94,48 +78,15 @@
         <div class="carrinho">
             <h3>Carrinho de compras</h3>
             <div class="carrinho-lista">
-                <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <input type="number" value="1" min="1">
-                    <button class="remove">-</button>
-                </div>
-                <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <input type="number" value="1" min="1">
-                    <button class="remove">-</button>
-                </div>
-                <div class="produto">
-                    <img src="" alt="">
-                    <p>Nome do produto</p>
-                    <p>Preço un.</p>
-                    <input type="number" value="1" min="1">
-                    <button class="remove">-</button>
-                </div>
             </div>
             <div class="options">
                 <button onclick="Selecionar_Pagamento()">Finalizar compra</button>
-                <button>Limpar carrinho</button>
+                <button onclick="Limpar_Carrinho()">Limpar carrinho</button>
             </div>
         </div>
     </div>
 
-    <script>
-
-        function Fechar_Pagamento() {
-            const tela = document.querySelector(".base");
-            tela.style.display = "none";
-        }
-
-        function Selecionar_Pagamento() {
-            const tela = document.querySelector(".base");
-            tela.style.display = "flex";
-        }
-
-    </script>
+    <script src="../JAVASCRIPT/adicionar_produtos.js"></script>
     
 </body>
 </html>
