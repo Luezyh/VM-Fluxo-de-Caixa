@@ -21,16 +21,18 @@ function Add(nome, preco, img) {
 
     if (carrinho.includes(nome)){
     }else{
-        carrinholista.innerHTML = carrinholista.innerHTML + 
-        `
-        <div class="produto">
+
+        let produto = document.createElement("div")
+        produto.classList.add("produto")
+        produto.innerHTML = `
         <img src="${img}">
         <p>${nome}</p>
         <p class = "preco">${preco}</p>
         <input class = "quantidade" type="number" value="1" min="1">
         <button onclick="Remover(this, '${nome}')" class="remove">-</button>
-        </div>
-        `;
+        `
+        carrinholista.appendChild(produto);
+        
         carrinho.push(nome);
     }
     console.log(carrinho);
